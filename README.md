@@ -1,4 +1,8 @@
-Repository web_2012/example/myfirsttest
+Testing for Stars
 ==============
 
-createdSun Nov 25 20:47:13 CET 2012
+a rails example app
+where you can write your first tests.
+
+start the server and look at the homepage!
+or look at public/index.html directly.
