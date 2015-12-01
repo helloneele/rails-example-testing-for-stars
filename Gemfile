@@ -17,7 +17,7 @@ gem 'jbuilder', '~> 2.0'
 
 group :development, :test do
   gem 'minitest-rails-capybara'
-  gem 'poltergeist', '~> 1.5.0'
+  gem 'capybara-webkit'
 end
 
 group :development, :test do
