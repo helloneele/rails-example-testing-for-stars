@@ -15,8 +15,9 @@ gem 'turbolinks'
 
 gem 'jbuilder', '~> 2.0'
 
-group :test do
-  gem 'capybara'
+group :development, :test do
+  gem 'minitest-rails-capybara'
+  gem 'poltergeist', '~> 1.5.0'
 end
 
 group :development, :test do
