@@ -223,17 +223,23 @@
             </li>
 
             <li>
-              <h2>Unit Test</h2>
-              <p>The number of stars should not be changable.  there
-              should only be a method `add_star!` that increases the number by
-              one.
-              </p>
-              <p>write the unit test first! then implement the changes in the
-              model!</p>
+              <h2>Model Test: default value</h2>
+              <p>Write a test to check that a newly created user
+              has a `no_stars` set to zero. This test should immediately
+              pass, the default value was set correctly in the migration that
+              created the users table.</p>
             </li>
 
             <li>
-              <h2>Integration test with Capibara</h2>
+              <h2>Model Test: a new method</h2>
+              <p>In the user model, there should be a method `add_star!` that increases the number by
+              one.
+              </p>
+              <p>Write the test first! then implement the changes in the model!</p>
+            </li>
+
+            <li>
+              <h2>Integration Test: a new feature</h2>
               <p>In the show-view there should be a button to increase the
               number of stars for a user.</p>
               <p>write the integration test first! (see <a
