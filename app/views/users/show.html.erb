@@ -1,18 +1,24 @@
-<h1>Profile</h1>
+<p id="notice"><%= notice %></p>
+
 <p>
-  Name:
+  <strong>First name:</strong>
   <%= @user.first_name %>
-  <%= "#{@user.middle_initial}." unless @user.middle_initial.nil? %>
+</p>
+
+<p>
+  <strong>Middle initial:</strong>
+  <%= @user.middle_initial %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
   <%= @user.last_name %>
 </p>
 
 <p>
-  <b>No stars:</b>
-  <%= @user.no_stars %>    
-  <%= "*" * (@user.no_stars || 0) %>
+  <strong>No stars:</strong>
+  <%= @user.no_stars %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Users List', users_path %>
-
-
+<%= link_to 'Back', users_path %>

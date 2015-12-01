@@ -212,11 +212,6 @@
           <h2>Learn about test driven development in rails</h2>
         </div>
 
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
-
         <div id="getting-started">
           <h1>What to do</h1>
 
@@ -225,6 +220,26 @@
               <h2>Load seed data</h2>
               <p>What is seed data?  Where is the actual file located? 
               And what was that rake task to load it?</p>
+            </li>
+
+            <li>
+              <h2>Unit Test</h2>
+              <p>The number of stars should not be changable.  there
+              should only be a method `add_star!` that increases the number by
+              one.
+              </p>
+              <p>write the unit test first! then implement the changes in the
+              model!</p>
+            </li>
+
+            <li>
+              <h2>Integration test with Capibara</h2>
+              <p>In the show-view there should be a button to increase the
+              number of stars for a user.</p>
+              <p>write the integration test first! (see <a
+                href="http://techiferous.com/2010/04/using-capybara-in-rails-3/">using
+                capybara in rails 3</a>.)   then implement the changes in the
+              view!</p>
             </li>
 
             <li>
@@ -237,25 +252,6 @@
               <p>Do not forget: every successfull refactoring step should be a git commit!</p>
             </li>
 
-            <li>
-              <h2>unit test</h2>
-              <p>The number of stars should not be changable.  there
-              should only be a method `add_star!` that increases the number by
-              one.
-              </p>
-              <p>write the unit test first! then implement the changes in the
-              model!</p>
-            </li>
-
-            <li>
-              <h2>integration test with capibara</h2>
-              <p>In the show-view there should be a button to increase the
-              number of stars for a user.</p>
-              <p>write the integration test first! (see <a
-                href="http://techiferous.com/2010/04/using-capybara-in-rails-3/">using
-                capybara in rails 3</a>.)   then implement the changes in the
-              view!</p>
-            </li>
           </ol>
         </div>
       </div>

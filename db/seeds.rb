@@ -3,5 +3,7 @@
 #
 # Examples:
 #
+#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   Mayor.create(name: 'Emanuel', city: cities.first)
 
 FastSeeder.seed_csv!(User, "users.csv", :first_name, :last_name, :middle_initial, :no_stars)
