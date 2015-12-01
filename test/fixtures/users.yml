@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  first_name: MyString
-  middle_initial: MyString
-  last_name: MyString
-  no_stars: 1
+  first_name: John
+  middle_initial: f
+  last_name: Kennedy
+  no_stars: 0
 
 two:
-  first_name: MyString
-  middle_initial: MyString
-  last_name: MyString
+  first_name: Hillary
+  middle_initial: R
+  last_name: Clinton
   no_stars: 1
