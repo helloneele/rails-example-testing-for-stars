@@ -1,15 +1,19 @@
 require "test_helper"
 
 class ListOfUsersTest < Capybara::Rails::TestCase
-  scenario "Without Javascript", js: false do
+
+  test "user#index page contains heading" do
     visit users_path
     assert_content page, "Users"
-    refute_content page, "Created by JavaScript"
+    refute_button page, "load info"
   end
-  scenario "With Javascript", js: true do
+
+  test "user#index page contains button load info" do
+    Capybara.current_driver = Capybara.javascript_driver
     visit users_path
     save_screenshot('tmp/list_of_users_screenshot.png', :full => true)
     assert_content page, "Users"
-    assert_content page, "Created by JavaScript"
+    assert_button page, "load info"
   end
+
 end

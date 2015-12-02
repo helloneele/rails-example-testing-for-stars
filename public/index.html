@@ -217,9 +217,12 @@
 
           <ol>
             <li>
-              <h2>Load seed data</h2>
-              <p>What is seed data?  Where is the actual file located? 
-              And what was that rake task to load it?</p>
+              <h2>Run the tests</h2>
+              <p>using <kbd>rake test</kbd>.  Do all the tests pass? </p>
+            </li>
+            <li>
+              <h2>Find the Model Test</h2>
+              <p>Find the file that contains tests for model User </p>
             </li>
 
             <li>
@@ -231,32 +234,67 @@
             </li>
 
             <li>
-              <h2>Model Test: a new method</h2>
+              <h2>TDD: a new method</h2>
               <p>In the user model, there should be a method `add_star!` that increases the number by
               one.
               </p>
-              <p>Write the test first! then implement the changes in the model!</p>
+              <p>Write the test first. Make sure it fails, then implement the changes in the model
+              and make sure the test passes now.</p>
             </li>
 
             <li>
-              <h2>Integration Test: a new feature</h2>
+              <h2>Find the Feature Test</h2>
+              <p>Find the file that already contains two feature tests.
+              What do they test for.  Which test uses JavaScript and which doesn't?
+              The javascript driver can save screenshots. 
+              Before you look at the screenshot: discuss what you expect it to show!
+              Then find the screenshot and compare.
+              </p>
+            </li>
+
+            <li>
+              <h2>Feature Test: create a user</h2>
+              <p>write a feature test that loads the new user form,
+              fills part of it in, and checks if the users name appears on the resulting page.
+              </p>
+              <p>When your test passes, add a validation that
+              makes saving your test data invalid.  Make sure that the test
+              does not pass anymore.</p>
+              <p>Now split you test into two test cases: one to make
+              sure that a user that is not valid cannot be saved, and one
+              to make sure that a valid user can be saved.</p>
+            </li>
+            <li>
+              <h2>TDD: a new feature</h2>
               <p>In the show-view there should be a button to increase the
-              number of stars for a user.</p>
-              <p>write the integration test first! (see <a
-                href="http://techiferous.com/2010/04/using-capybara-in-rails-3/">using
-                capybara in rails 3</a>.)   then implement the changes in the
+              number of stars for a user. After pressing the button you
+              should return to the user index page and see the new number
+              of stars displayed.</p>
+              <p>Write the feauture test first! 
+              then implement the necessary changes.</p>
+            </li>
+
+            <li>
+              <h2>Feature Test with javascript: load info with AJAX</h2>
+              <p>In the user#index view there is a button
+              that loads information about the rails environment via ajax and
+              displays it in the .output box. </p>
+              <p>Write a feature test that checks this behaviour.</p>
+              <p>When your test passes, and you think you're done,
+              try breaking the behavior by changing the URL in <kbd>app/assets/javascript/application.js<kbd>
+              and make sure that the test now fails. This way you can confirm that
+              your test actually tests somthing ;-)</p>
+              <p>Fix everything again.</p>
+            </li>
+            <li>
+              <h2>TDD: add stars with AJAX</h2>
+              <p>In the show-view there should be a button for each user to increase the
+              number of stars. This should happen via AJAX (<kbd>remote: true</kbd>)</p>
+              <p>Write the feauture test first! 
+              then implement the changes in the
               view!</p>
             </li>
 
-            <li>
-              <h2>Follow the Railscasts</h2>
-              <p>(except for "autotest" - just use "rake test" instead if you
-              run into trouble)
-              <a href="http://railscasts.com/episodes/10-refactoring-user-name-part-1?view=asciicast">#10</a>,
-              <a href="http://railscasts.com/episodes/11-refactoring-user-name-part-2?view=asciicast">#11</a>,
-              <a href="http://railscasts.com/episodes/12-refactoring-user-name-part-3?view=asciicast">#12</a>.</p>
-              <p>Do not forget: every successfull refactoring step should be a git commit!</p>
-            </li>
 
           </ol>
         </div>

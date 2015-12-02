@@ -2,7 +2,7 @@
 
 one:
   first_name: John
-  middle_initial: f
+  middle_initial: F
   last_name: Kennedy
   no_stars: 0
 

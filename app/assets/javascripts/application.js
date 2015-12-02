@@ -18,5 +18,10 @@
 
 
 $(function(){
-  $('.stars').append('Created by JavaScript');
+  $('.info').append('<button class="load_info">load info</button>');
+  $('.info').append('<div class="output"></div>');
+  $('.load_info').on('click', function() {
+    $('.info .output').load("/rails/info/properties");
+  });
 });
+
