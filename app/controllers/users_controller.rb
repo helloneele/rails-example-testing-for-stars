@@ -7,6 +7,12 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  # GET /users/count
+  # GET /users/count.json
+  def count
+    @count = User.count
+  end
+
   # GET /users/1
   # GET /users/1.json
   def show
