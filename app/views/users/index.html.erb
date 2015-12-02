@@ -4,7 +4,7 @@
 
 <ul>
   <% for user in @users %>
-    <li>
+    <li class="user_<%= user.id %>">
     <a href="<%= user_path(user) %>">
       <%= user.first_name %>
       <%= "#{user.middle_initial}." unless user.middle_initial.nil? %>
