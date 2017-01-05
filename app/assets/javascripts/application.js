@@ -16,20 +16,23 @@
 //= require_tree .
 
 
-
-$(function(){
-  console.log("== full page load of " + document.location.pathname);
-
+$(document).ready(function(){
+  // document ready is the wrong event!
+  // our app uses turbolinks, this event will not get fired when a page is loaded with turbolinks
 });
 
+
 $( document ).on('turbolinks:load', function() {
-  console.log("-- page load of " + document.location.pathname);
+  // this is the right load event!
 
   $('.info').append('<button class="load_info">load info</button>');
   $('.info').append('<div class="output"></div>');
+  console.log('done adding html!');
+
   $('.load_info').on('click', function() {
     $.getJSON("/users/count.json", function(data){
       $('.info .output').html("There are " + data.count + " Users");
+      console.log('done loading!');
     });
   });    
 });
