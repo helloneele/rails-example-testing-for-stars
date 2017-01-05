@@ -1,10 +1,13 @@
 ## Stars
 
-a ruby on rails 4.1 example app to learn about testing
+a ruby on rails 5 example app to learn about testing.
 
 clone this repository, then
 
-    bundle
+    bundle   
+
+If you run into problems with capybara-webkit, see [install instructions](https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit). after everything installs correctly go on:
+
     rake db:migrate
     rake db:seed
     rails server
@@ -19,11 +22,5 @@ You will be asked to
 
 To run the tests
 
-    rake test
-
-You will have to install webkit separately.
-on mac os use this:
-
-    brew install qt5
-    brew link --force  qt5
+    rails test
 

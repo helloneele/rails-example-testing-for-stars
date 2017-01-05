@@ -1,0 +1,119 @@
+<style>
+html,
+body {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.nav {
+  background: hotpink;
+  flex: 1;
+  width: 300px;
+  padding: 10px;
+}
+
+
+.main {
+  background: aliceblue;
+  flex: 4;  
+  padding: 10px;
+}
+</style>
+<div class="content">
+  <div class="nav">
+    <h2>List of Pages</h2>
+    <%= link_to 'Users#index', users_path %>
+  </div>
+  <div class="main">
+    <h1>Testing for Stars Exercise</h1>
+    <h2>Learn about test driven development in rails</h2>
+
+
+    <ol>
+      <li>
+        <h2>Run the tests</h2>
+        <p>using <kbd>rails test</kbd>.  Do all the tests pass? </p>
+      </li>
+      <li>
+        <h2>Find the Model Test</h2>
+        <p>Find the file that contains tests for model User </p>
+      </li>
+
+      <li>
+        <h2>Model Test: default value</h2>
+        <p>Write a test to check that a newly created user
+        has a `no_stars` set to zero. This test should immediately
+        pass, the default value was set correctly in the migration that
+        created the users table.</p>
+      </li>
+
+      <li>
+        <h2>TDD: a new method</h2>
+        <p>Write a new method in the user model: 
+        a method named `add_star!` that increases the number of stars by one.
+        </p>
+        <p>Write the test first. Make sure it fails, 
+        then implement the changes in the model
+        and make sure the test passes now.</p>
+      </li>
+
+      <li>
+        <h2>Study the existing Feature Test</h2>
+        <p>Find the file that already contains two feature tests.
+        What do they test for?  Which test uses JavaScript and which doesn't?
+        The javascript driver can save screenshots, and this feature is
+        used once in the existing tests.
+        Before you look at the screenshot: discuss what you expect it to show!
+        Then find the screenshot and compare.
+        </p>
+      </li>
+
+      <li>
+        <h2>Feature Test: create a user</h2>
+        <p>write a feature test that loads the new user form,
+        fills part of it in, and checks if the users name appears on the resulting page.
+        </p>
+        <p>When your test passes, add a validation that
+        makes saving your test data invalid.  Make sure that the test
+        does not pass anymore.</p>
+        <p>Now split you test into two test cases: one to make
+        sure that a user that is not valid cannot be saved, and one
+        to make sure that a valid user can be saved.</p>
+      </li>
+      <li>
+        <h2>TDD: a new feature</h2>
+        <p>In the show-view there should be a button to increase the
+        number of stars for a user. After pressing the button you
+        should return to the user index page and see the new number
+        of stars displayed.</p>
+        <p>Write the feauture test first! 
+        then implement the necessary changes.</p>
+      </li>
+
+      <li>
+        <h2>Feature Test with javascript: load info with AJAX</h2>
+        <p>In the user#index view there is a button
+        that loads information via ajax and
+        displays it in the .output box. </p>
+        <p>Write a feature test that checks this behaviour.</p>
+        <p>When your test passes, and you think you're done,
+        try breaking the behavior by changing the URL in <kbd>app/assets/javascript/application.js</kbd>
+        and make sure that the test now fails. This way you can confirm that
+        your test actually tests somthing ;-)</p>
+        <p>Fix everything again.</p>
+      </li>
+      <li>
+        <h2>TDD: add stars with AJAX</h2>
+        <p>In the show-view there should be a button for each user to increase the
+        number of stars. This should happen via AJAX (<kbd>remote: true</kbd>)</p>
+        <p>Write the feauture test first! 
+        then implement the changes in the
+        view!</p>
+      </li>
+    </ol>
+  </div>
+</div>
