@@ -18,12 +18,19 @@
 
 
 $(function(){
+  console.log("== full page load of " + document.location.pathname);
+
+});
+
+$( document ).on('turbolinks:load', function() {
+  console.log("-- page load of " + document.location.pathname);
+
   $('.info').append('<button class="load_info">load info</button>');
   $('.info').append('<div class="output"></div>');
   $('.load_info').on('click', function() {
     $.getJSON("/users/count.json", function(data){
       $('.info .output').html("There are " + data.count + " Users");
     });
-  });
+  });    
 });
 

@@ -19,3 +19,10 @@
   float:right;
   background-color: #Faa;
 }
+
+@media screen and (min-width: 1000px) {
+  section {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
