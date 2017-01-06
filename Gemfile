@@ -17,6 +17,8 @@ group :development, :test do
   gem 'minitest-rails-capybara'
   gem 'capybara-webkit'
   gem 'rails-controller-testing'
+  gem 'launchy'
+  gem 'transactional_capybara'
 end
 
 group :development, :test do
