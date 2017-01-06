@@ -12,19 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
 
 
 $(document).ready(function(){
-  // document ready is the wrong event!
-  // our app uses turbolinks, this event will not get fired when a page is loaded with turbolinks
-});
-
-
-$( document ).on('turbolinks:load', function() {
-  // this is the right load event!
-
   $('.info').append('<button class="load_info">load info</button>');
   $('.info').append('<div class="output"></div>');
   console.log('done adding html!');
