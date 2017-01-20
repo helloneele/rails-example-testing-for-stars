@@ -5,6 +5,7 @@ class ListOfUsersTest < Capybara::Rails::TestCase
     visit users_path
     assert_content page, 'Users'
     refute_button page, 'load info'
+
   end
 
   test 'user#index page contains button load info' do
@@ -13,7 +14,7 @@ class ListOfUsersTest < Capybara::Rails::TestCase
     save_screenshot('list_of_users_screenshot.png', full: true)
     assert_content page, 'Users'
     assert_button page, 'load info'
-    # puts "\nconsole.log said:"
-    # puts page.driver.console_messages
+    puts "\nconsole.log said:"
+    puts page.driver.console_messages
   end
 end

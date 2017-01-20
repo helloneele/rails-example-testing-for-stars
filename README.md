@@ -48,3 +48,20 @@ Finished in 1.614760s, 6.1929 runs/s, 11.1472 assertions/s.
 
 # Aufgabe 4
 siehe Code
+
+# Aufgabe 5
+`test/features/list_of_users_test.rb`
+
+## 1. Test
+Auf der User-Seite wird überprüft ob es eine Überschrift mit "Users" gibt, aber nur im Bereich bis zu dem Button mit dem value "load info"
+
+## 2. Test
+Auf der User-Seite wird ein Screenshot gemacht. Es wird geschaut ob es eine Überschrift mit "Users" und einen Button mit "load info" gibt.
+
+Der erste Test verwendet kein JavaScript, der zweite hingegen schon.
+
+Auf dem Screenshot sollten nur die Testdaten sichtbar sein.
+
+Der Screenshot liegt unter `tmp/capybara/list_of_users_screenshot.png`
+
+Es sind nur die Testdaten sichtbar.
