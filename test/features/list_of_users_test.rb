@@ -38,8 +38,7 @@ class ListOfUsersTest < Capybara::Rails::TestCase
     fill_in('First name', with: 'Test Vorname')
     fill_in('Middle initial', with: 'Test Middle')
     click_button('Create User')
-    assert_content page, 'successfully'
-    assert_content page, 'Test Vorname'
+    assert_content page, 'Last name can\'t be blank'
     save_screenshot('user-saved.png', full: true)
   end
 end
