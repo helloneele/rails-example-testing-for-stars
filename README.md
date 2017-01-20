@@ -65,3 +65,7 @@ Auf dem Screenshot sollten nur die Testdaten sichtbar sein.
 Der Screenshot liegt unter `tmp/capybara/list_of_users_screenshot.png`
 
 Es sind nur die Testdaten sichtbar.
+
+# Aufgabe 6
+Mit Validation-Fehler:
+`Users New User 1 error prohibited this user from being saved: Last name can't be blank First name Middle initial Last name No stars Back".``

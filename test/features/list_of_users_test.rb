@@ -30,4 +30,16 @@ class ListOfUsersTest < Capybara::Rails::TestCase
     assert_content page, 'Test Vorname'
     save_screenshot('user-saved.png', full: true)
   end
+
+  test 'user#new page, create a user, validation does not pass' do
+    Capybara.current_driver = Capybara.javascript_driver
+    visit new_user_path
+    save_screenshot('create-user.png', full: true)
+    fill_in('First name', with: 'Test Vorname')
+    fill_in('Middle initial', with: 'Test Middle')
+    click_button('Create User')
+    assert_content page, 'successfully'
+    assert_content page, 'Test Vorname'
+    save_screenshot('user-saved.png', full: true)
+  end
 end
