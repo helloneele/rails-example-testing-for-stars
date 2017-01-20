@@ -24,3 +24,26 @@ To run the tests
 
     rails test
 
+
+# ANTWORTEN
+
+# Aufgabe 1
+Jaaaa!
+
+# Aufgabe 2
+`test/models/user_test.rb`
+
+# Aufgabe 3
+```
+Run options: --seed 39231
+
+# Running:
+
+..........
+
+Finished in 1.614760s, 6.1929 runs/s, 11.1472 assertions/s.
+
+10 runs, 18 assertions, 0 failures, 0 errors, 0 skips
+```
+
+# Aufgabe 4
